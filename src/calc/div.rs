@@ -1,5 +1,5 @@
 pub fn div(left:i32, right:i32) -> i32 {
-    return 0;
+    return left / right;
 }
 
 pub mod test {

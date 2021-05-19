@@ -1,5 +1,8 @@
 pub fn sqrt(x:i32) -> i32 {
-    return 0
+    if x < 0 {
+        panic!("Guess value must be positive number: {}", x);
+    }
+    return (x as f64).sqrt() as i32;
 }
 
 pub mod test {

@@ -1,5 +1,5 @@
 pub fn add(left:i32, right:i32) -> i32 {
-    return 0;
+    return left + right;
 }
 
 pub mod test {
@@ -17,6 +17,6 @@ pub mod test {
 
     #[test]
     fn negative_addition(){
-        assert_eq!(1, add(1, -1))
+        assert_eq!(0, add(1, -1))
     }  
 }

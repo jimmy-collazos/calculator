@@ -36,7 +36,7 @@ fn main() {
         println!("segundo valor:");
         read(&mut iy);
     } else {
-        iy = String::from("");
+        iy = String::from("0");
     }
 
     let x: i32 = ix.trim().parse().unwrap();

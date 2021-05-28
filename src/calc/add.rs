@@ -1,8 +1,8 @@
-pub fn add(left:i32, right:i32) -> i32 {
-    return left + right;
+pub fn add(a:i32, b:i32) -> i32 {
+    return a + b;
 }
 
-pub mod test {
+pub mod add_test {
     use super::*;
 
     #[test]

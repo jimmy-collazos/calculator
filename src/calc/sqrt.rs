@@ -1,6 +1,7 @@
 // @see https://www.geeksforgeeks.org/bakhshali-approximation-computing-square-roots/
 pub fn sqrt(x:i32) -> i32 {
 
+    // reject negative values
     if x < 0 {
         panic!("Guess value must be positive number: {}", x);
     }
@@ -41,7 +42,7 @@ pub fn sqrt(x:i32) -> i32 {
     return sqrt_of_x;
 }
 
-pub mod test {
+pub mod sqrt_test {
     use super::*;
 
     #[test]

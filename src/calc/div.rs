@@ -1,8 +1,8 @@
-pub fn div(left:i32, right:i32) -> i32 {
-    return left / right;
+pub fn div(a:i32, b:i32) -> i32 {
+    return a / b;
 }
 
-pub mod test {
+pub mod div_test {
     use super::*;
 
     #[test]

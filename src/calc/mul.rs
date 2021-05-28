@@ -1,8 +1,8 @@
-pub fn mul(left:i32, right:i32) -> i32 {
-    return left * right;
+pub fn mul(a:i32, b:i32) -> i32 {
+    return a * b;
 }
 
-pub mod test {
+pub mod mul_test {
     use super::*;
 
     #[test]

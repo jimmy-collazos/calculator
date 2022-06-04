@@ -18,8 +18,11 @@ fn main() {
 
     println!("Bienvenido a tu calculadora!!");
     println!("--------------------------------");
-    println!("¿Qué operación quieres realicar?");
-    println!("Opciones: más(+), menos(-), multiplicaciòn(*), divición(/) y raiz cuadrada(v) ");
+    println!("¿Qué operación quieres realicar? utiliza uno de los siguientes símbolos:");
+    println!(" • Suma(+) y resta(-) de números reales");
+    println!(" • Multiplicación(*) y división(/) de números reales");
+    println!(" • Raíz cuadrada(v) de números reales");
+    println!(" • Función exponencial(^) con base e");
 
     read(&mut op);
     let op: char = op.trim().chars().next().unwrap();
@@ -28,7 +31,7 @@ fn main() {
         return;
     }
 
-    println!("valor:");
+    println!("primer valor:");
     read(&mut ix);
     
 
@@ -47,6 +50,7 @@ fn main() {
         '-' => calc::sub::sub(x, y),
         '*' => calc::mul::mul(x, y),
         '/' => calc::div::div(x, y),
+        '^' => calc::pow::pow(x, y),
         'v' => calc::sqrt::sqrt(x),
         _ => panic!("Operación desconocida")
     };

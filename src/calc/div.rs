@@ -1,4 +1,9 @@
 pub fn div(a:i32, b:i32) -> i32 {
+    if b == 0 {
+        panic!("Divide-by-zero error");
+    } else if a < b {
+        panic!("Divide result is zero");
+    }
     return a / b;
 }
 

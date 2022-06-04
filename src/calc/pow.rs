@@ -1,5 +1,19 @@
 pub fn pow(mut base:i32, mut exponent:i32) -> i32 {
-  return 0;
+  let mut acc = 1; // output accumulator
+
+  while exponent > 1 {
+      if (exponent & 1) == 1 {
+          acc *= base;
+      }
+      exponent /= 2;
+      base = base * base;
+  }
+
+  if exponent == 1 {
+      acc *= base;
+  }
+
+  return acc;
 }
 
 pub mod pow_test {

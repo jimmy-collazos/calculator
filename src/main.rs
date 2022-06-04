@@ -14,7 +14,7 @@ fn main() {
     let mut ix = String::new();
     let mut iy = String::new();
     let mut op = String::new();
-    let operators = String::from("+-*/v");
+    let operators = String::from("+-*/v^");
 
     println!("Bienvenido a tu calculadora!!");
     println!("--------------------------------");

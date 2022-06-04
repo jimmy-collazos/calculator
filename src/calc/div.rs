@@ -23,6 +23,6 @@ pub mod div_test {
 
     #[test]
     fn negative_division(){
-        assert_eq!(-1, div(-10, 10))
+        assert_eq!(-1, div(10, -10))
     }  
 }

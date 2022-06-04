@@ -2,11 +2,12 @@
 
 Simple calculator app (by command line application)
 
-## Use
+## Usage
 run app and folow instructinos
 
-## Actions
+### Actions
 
 * Add and Substraction
 * Multiplication a Divition
 * Squere root (Bakhshali Approximation)
+* Pow
